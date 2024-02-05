@@ -58,7 +58,7 @@ function App() {
       {<button onClick={()=>setCartOpen(!cartOpen)} className={`fixed top-4 right-4 z-20 p-2 rounded-xl ${cartOpen?'text-white bg-red-700':'text-black bg-green-700'}`}>{cartOpen?'CLOSE':'OPEN'}</button>}
       {cartOpen?<AsideBar products={cart} addCart={addCart} removeOneCart={removeOneCart} clearCart={clearCart} />:null}
       </main>
-      <button onClick={()=>Checkout({products:cart})} className='bg-green-500 p-2 rounded-xl'>PAY</button>
+      <button onClick={()=>Checkout({products:  cart})} className='bg-green-800 p-2 px-4 text-white rounded-xl hover:scale-110 duration-300 fixed top-2 left-2'>PAY HERE</button>
     </section>
   )
 }
